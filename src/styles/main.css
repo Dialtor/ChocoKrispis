@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+:root {
+  --SideBanner: rgba(93, 2, 3, 1);
+  --SideBanner2: rgba(173, 14, 14, 0.904);
+  --FirstGradientColor: rgba(2, 0, 36, 1);
+  --SecondGradientColor: rgba(104, 29, 0, 1);
+  --TirthGradientColor: rgba(197, 126, 0, 1);
+  --YellowColor: #d9b30c;
+  --white: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.choco_card_container {
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  height: 670px;
+  background-color: var(--SecondGradientColor);
+  background: linear-gradient(180deg, var(--FirstGradientColor) 0%, var(--SecondGradientColor) 75%, var(--TirthGradientColor) 100%);
+  display: flex;
+  position: relative;
+}
+
