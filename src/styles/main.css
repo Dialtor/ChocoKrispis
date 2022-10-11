@@ -120,3 +120,97 @@
 }
 
 /* Flex Side Info End */
+
+/* Right Info Start */
+
+.right_infochoco_container {
+  /* background-color: lightcoral; */
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.img_platochoco_container {
+  width: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img_platochoco_container img {
+  width: 100%;
+  min-width: 380px;
+}
+
+.info_header {
+  /* background-color: blue; */
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_header img{
+  max-width: 280px;
+  /* background-color: yellow; */
+}
+
+.info_nutricionfacts_container {
+  display: flex;
+  gap: 4px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+
+.item_fact {
+  width: 90px;
+  height: 90px;
+  background-color: var(--white);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  position: relative;
+
+}
+
+.item_fact::before {
+  width: 86px;
+  height: 86px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--FirstGradientColor);
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  z-index: 4;
+  opacity: .9;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.item_fact:nth-child(1)::before {
+  content: 'Exceso Calorias';
+}
+
+.item_fact:nth-child(2)::before {
+  content: 'Exceso Azúcares';
+}
+
+/* Right Info End */
+
+
