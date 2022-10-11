@@ -152,16 +152,19 @@
 .info_header {
   /* background-color: blue; */
   width: 100%;
-  height: 50%;
+  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.info_header img{
-  max-width: 280px;
-  /* background-color: yellow; */
+.keloggsLogo{
+  max-width: 40%;
+}
+
+.chocokrispilogo {
+  width: 70%;
 }
 
 .info_nutricionfacts_container {
@@ -174,8 +177,8 @@
 
 
 .item_fact {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   background-color: var(--white);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   position: relative;
@@ -183,8 +186,8 @@
 }
 
 .item_fact::before {
-  width: 86px;
-  height: 86px;
+  width: 76px;
+  height: 76px;
   color: white;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
